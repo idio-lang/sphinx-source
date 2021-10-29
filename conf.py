@@ -76,9 +76,9 @@ html_theme_options = {
 
     # Watch button URL will be
     # https://github.com/{github_user}/{github_repo}
-    'github_button': True,
+    'github_button': False,
     'github_user': 'idio-lang',
-    'github_repo': 'sphinx-source',
+    'github_repo': 'idio-lang',
 
     # Normally these would be used in the sidebar navigation.html
     # (which we comment out below) but we re-use in the header
@@ -91,6 +91,8 @@ html_theme_options = {
         'DIPS': '/docs/DIPS/',
         'Support': '/support.html',
     },
+
+    'nosidebar': True,
 }
 
 html_sidebars = {
