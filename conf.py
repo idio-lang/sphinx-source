@@ -91,6 +91,8 @@ html_theme_options = {
         'DIPS': '/docs/DIPS/',
         'Support': '/support.html',
     },
+
+    'nosidebar': True,
 }
 
 html_sidebars = {
