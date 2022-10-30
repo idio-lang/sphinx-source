@@ -18,7 +18,7 @@ sys.path.append(os.path.abspath('./_ext'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'Idio'
+project = 'Idio By Example'
 now = datetime.datetime.now()
 copyright = '{0}, Ian Fitchet'.format (now.year)
 author = 'Ian Fitchet'
@@ -36,6 +36,7 @@ extensions = [
     'sphinx.ext.graphviz',
     'sphinx.ext.intersphinx',
     'sphinx_git',
+    'sphinx_copybutton',
     'aside',
     'idio_lexer',
     'idio_domain',
@@ -64,7 +65,7 @@ html_theme = 'idio-theme'
 
 html_theme_path = ['.']
 
-html_short_title = 'Idio'
+html_short_title = 'Idio By Example'
 
 # Alabaster theme options
 html_theme_options = {
@@ -78,13 +79,14 @@ html_theme_options = {
     # https://github.com/{github_user}/{github_repo}
     'github_button': True,
     'github_user': 'idio-lang',
-    'github_repo': 'sphinx-source',
+    'github_repo': 'guide',
 
     # Normally these would be used in the sidebar navigation.html
     # (which we comment out below) but we re-use in the header
     'extra_nav_links': {
         'Home': '/',
         'Guide': '/docs/guide/',
+        'By Example': '/docs/idio-by-example/',
         'Reference': '/docs/ref/',
         'Getting': '/get.html',
         'Roadmap': '/roadmap.html',
@@ -95,12 +97,12 @@ html_theme_options = {
 
 html_sidebars = {
     '**': [
-        'about.html',
-        # 'navigation.html',
-        'localtoc.html',
-        'relations.html',
-        'searchbox.html',
-        'donate.html',
+        #'about.html',
+         'navigation.html',
+        #'localtoc.html',
+        #'relations.html',
+        #'searchbox.html',
+        #'donate.html',
         # 'sourcelink.html',
     ]
 }
